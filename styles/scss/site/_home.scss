@@ -7,7 +7,7 @@ body{
 }
 
 p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
-  font-family: Roboto;
+  font-family: Helvetica;
   color: $text;
 }
 
@@ -41,8 +41,38 @@ section {
 
 /*-------------------------------Banner----------------------------------*/
 .banner{
-  background-image: url(../assets/img/banner/bannerd.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
+  &_back{
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    z-index: 50;
+    h1{
+      color: $yellow;
+      padding: 32px 20px 50px 20px;
+    }
+    &::before {
+    position: absolute;
+    content: "";
+    background-color: #f47920;
+    width: 325px;
+    height: 216px;
+    top: 0;
+    border-bottom-right-radius: 30%;
+    z-index: -1;
+    opacity: 76%;
+  }
+  }
+  .swiper{
+    &_button{
+      color: $white;
+    }
+    span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+       background: $white;
+       opacity: 1;
+    }
+    span.swiper-pagination-bullet{
+      background: $white;
+      opacity: 0.5;
+    }
+  }
 }

@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/lib/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/lib/animate.min.css">
   <link rel="stylesheet" href="styles/css/fonts.css" />
   <link rel="stylesheet" href="styles/css/bundle.min.css" />
@@ -27,18 +28,38 @@
 <body>
   <header></header>
   <section id="banner" class="banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 ">
-          <h1>Landing title</h1>
-          <img src="assets/img/fondo.svg" alt="">
+    <div class="swiper gallery-banner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/img/banner/bannerd.jpg" alt="" loading="lazy">
+            <div class="banner_back d-none d-md-block">
+              <h1 class="fw-bold">Hacé realidad<br>el sueño de<br>tu auto propio</h1>
+            </div>
+        </div>
+        <div class="swiper-slide" >
+          <img src="assets/img/banner/bannerd.jpg" alt="" loading="lazy">
+            <div class="banner_back d-none d-md-block">
+              <h1 class="fw-bold">Hacé realidad<br>el sueño de<br>tu auto propio</h1>
+            </div>
+        </div>
+        <div class="swiper-slide" >
+          <img src="assets/img/banner/bannerd.jpg" alt="" loading="lazy">
+            <div class="banner_back d-none d-md-block">
+              <h1 class="fw-bold">Hacé realidad<br>el sueño de<br>tu auto propio</h1>
+            </div>
         </div>
       </div>
+      <!-- Add Arrows -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next swiper_button"></div>
+      <div class="swiper-button-prev swiper_button"></div>
     </div>
+
   </section>
   <footer></footer>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/lib/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="assets/lib/wow.min.js"></script>
 <script type="text/javascript" src="assets/index.js"></script>
 </body>
