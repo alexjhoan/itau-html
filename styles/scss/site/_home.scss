@@ -38,3 +38,11 @@ section {
   border-color: $btn-hover!important;
   box-shadow: none!important;
 }
+
+/*-------------------------------Banner----------------------------------*/
+.banner{
+  background-image: url(../assets/img/banner/bannerd.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
