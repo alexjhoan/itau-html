@@ -1,26 +1,24 @@
 @font-face {
   font-family: Helvetica;
-  src: url(../fonts/helvetica/helvetica-light.ttf) format('truetype');
+  src: url(../fonts/helvetica-light.ttf) format('truetype');
   font-style: normal;
-  font-weight: 300;
+  font-weight: 100;
 }
 @font-face {
   font-family: Helvetica;
-  src: url(../fonts/helvetica/helvetica-Oblique.ttf) format('truetype');
-  font-style: normal;
+  src: url(../fonts/helvetica-Oblique.ttf) format('truetype');
+  font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: Helvetica;
-  src: url(../fonts/helvetica/helvetica-Bold.ttf) format('truetype');
+  src: url(../fonts/helvetica-Bold.ttf) format('truetype');
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: Helvetica;
-  src: url(../fonts/helvetica/helvetica-BoldOblique.ttf) format('truetype');
-  font-style: normal;
-  font-weight: 800;
+  src: url(../fonts/helvetica-BoldOblique.ttf) format('truetype');
+  font-style: italic;
+  font-weight: 700;
 }
-
-
