@@ -1,0 +1,78 @@
+:root{
+  font-size: 16px;
+}
+
+body{
+  opacity: 0;
+}
+
+p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
+  font-family: Helvetica;
+  color: $text;
+}
+
+a,p,div,input,button,textarea{
+  font-family: Helvetica;
+  color: $text-secondary;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  position: relative;
+  padding: 8vh 0;
+}
+
+.btn.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  border-radius: 0;
+  padding: 10px 100px;
+  color: $white;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+  background-color: $btn-hover!important;
+  border-color: $btn-hover!important;
+  box-shadow: none!important;
+}
+
+/*-------------------------------Banner----------------------------------*/
+.banner{
+  &_back{
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    z-index: 50;
+    h1{
+      color: $yellow;
+      padding: 32px 20px 50px 20px;
+    }
+    &::before {
+    position: absolute;
+    content: "";
+    background-color: #f47920;
+    width: 325px;
+    height: 216px;
+    top: 0;
+    border-bottom-right-radius: 30%;
+    z-index: -1;
+    opacity: 76%;
+  }
+  }
+  .swiper{
+    &_button{
+      color: $white;
+    }
+    span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+       background: $white;
+       opacity: 1;
+    }
+    span.swiper-pagination-bullet{
+      background: $white;
+      opacity: 0.5;
+    }
+  }
+}
