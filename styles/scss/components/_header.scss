@@ -33,20 +33,13 @@ header {
       }
     }
   }
-  .link-dropdown {
-    &::after {
-      content: "";
-      transform: rotate(0deg);
-      display: inline-block;
-      margin-left: 10px;
-      vertical-align: 2px;
-      border-top: solid 7px;
-      border-right: solid 7px transparent;
-      border-bottom: 0;
-      border-left: solid 7px transparent;
-      transition: transform ease-in-out 0.2s;
-    }
-    &.opened::after {
+  .link-dropdown-icon {
+    transform: rotate(0deg);
+    width: 13px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    transition: transform ease-in-out 0.2s;
+    &.opened {
       transform: rotate(-180deg);
     }
   }
@@ -67,7 +60,6 @@ header {
     &.opened {
       height: 100px;
       opacity: 1;
-      transition: all ease-in-out 0.2s;
     }
     li {
       list-style: none;
@@ -115,6 +107,30 @@ header {
           color: $black;
         }
       }
+      .link-dropdown-icon {
+        float: right;
+        margin-top: 5;
+      }
+      .dropdown-container {
+        padding-top: 0;
+        position: relative;
+      }
+      .nav-dropdown {
+        background-color: $white;
+        min-width: 0;
+        max-width: 100%;
+        padding: 0;
+        height: 0;
+        transition: all ease-in-out 0.2s;
+        &.opened {
+          height: 100px;
+          padding: 0px 20px;
+        }
+        a {
+          text-decoration: none;
+          color: $black;
+        }
+      }
     }
   }
 }
@@ -131,6 +147,10 @@ header {
           padding-right: 12px;
         }
       }
+    }
+    .dropdown-container {
+      max-width: 540px;
+      margin: auto;
     }
   }
 }

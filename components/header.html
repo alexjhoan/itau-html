@@ -27,13 +27,19 @@
             <li class="nav-item">
               <a class="nav-link" href="/#">Concecionarias</a>
             </li>
-            <li
-              class="nav-item"
-              onmouseover="navDropdownShow()"
-              onmouseout="navDropdownHide()"
-            >
+            <li class="nav-item dropdown-trigger" id="dropdown-trigger">
               <a class="nav-link link-dropdown" href="#" onclick="return false">
                 Préstamos
+                <img
+                  src="../assets/icons/angle-down-white.svg"
+                  class="link-dropdown-icon d-none d-lg-inline-block"
+                  alt=""
+                />
+                <img
+                  src="../assets/icons/angle-down-black.svg"
+                  class="link-dropdown-icon d-lg-none"
+                  alt=""
+                />
               </a>
               <div class="dropdown-container">
                 <ul class="nav-dropdown">
