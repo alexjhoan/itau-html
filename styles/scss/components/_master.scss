@@ -1,17 +1,33 @@
-:root{
+:root {
   font-size: 16px;
 }
 
-body{
+body {
   opacity: 0;
 }
 
-p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
+p.h1,
+h1,
+p.h2,
+h2,
+p.h3,
+h3,
+p.h4,
+h4,
+p.h5,
+h5,
+p.h6,
+h6 {
   font-family: Helvetica;
   color: $text;
 }
 
-a,p,div,input,button,textarea{
+a,
+p,
+div,
+input,
+button,
+textarea {
   font-family: Helvetica;
   color: $text-secondary;
 }
@@ -34,8 +50,10 @@ section {
   font-weight: 700;
 }
 
-.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
-  background-color: $btn-hover!important;
-  border-color: $btn-hover!important;
-  box-shadow: none!important;
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+  background-color: $btn-hover !important;
+  border-color: $btn-hover !important;
+  box-shadow: none !important;
 }

@@ -1,40 +1,67 @@
 <div class="container header">
-      <div class="row">
-        <div class="col-12">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="/"><img src="assets/icons/itau-logo.svg" alt="Itau"></a>
-            <button class="navbar-toggler header_mobile" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span></span><span></span><span></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="/#">Simulador</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/#">Comparador</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/#">Concecionarias</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Préstamos
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Beneficios</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/#">Sucursales</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/#">Contacto</a>
-                </li>
-              </ul>
-            </div>
-            <a class="navbar-brand d-none d-lg-block" href="/#"><img src="assets/icons/lupa-blanca.svg" alt=""></a>
-          </nav>
+  <div class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/"
+          ><img src="assets/icons/itau-logo.svg" alt="Itau"
+        /></a>
+        <button
+          class="navbar-toggler header_mobile"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/#">Simulador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#">Comparador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#">Concecionarias</a>
+            </li>
+            <li class="nav-item dropdown-trigger" id="dropdown-trigger">
+              <a class="nav-link link-dropdown" href="#" onclick="return false">
+                Préstamos
+                <img
+                  src="../assets/icons/angle-down-white.svg"
+                  class="link-dropdown-icon d-none d-lg-inline-block"
+                  alt=""
+                />
+                <img
+                  src="../assets/icons/angle-down-black.svg"
+                  class="link-dropdown-icon d-lg-none"
+                  alt=""
+                />
+              </a>
+              <div class="dropdown-container">
+                <ul class="nav-dropdown">
+                  <li><a class="nav-link" href="#">Prestamos</a></li>
+                  <li><a class="nav-link" href="#">Beneficios</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#">Sucursales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </div>
+        <a class="navbar-brand d-none" href="/#">
+          <img src="assets/icons/lupa-blanca.svg" alt="" />
+        </a>
+      </nav>
     </div>
+  </div>
+</div>
+
+<script></script>

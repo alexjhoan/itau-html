@@ -1,21 +1,20 @@
-header{
+header {
   background-color: $orange;
   width: 100%;
-  position:fixed;
+  position: fixed;
   z-index: 100;
   top: 0;
   img {
-    max-width: 51px;
-    width: 100%;
+    width: 50px;
   }
-  .header{
-    &_mobile{
+  .header {
+    &_mobile {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       border: none;
-      span{
+      span {
         width: 30px;
         height: 3px;
         margin: 3px 0;
@@ -24,20 +23,58 @@ header{
       }
     }
   }
-  .navbar{
-    .nav-item {
-      .nav-link{
-        color: $white;
-        font-weight: 400;
+  .navbar {
+    .nav-link {
+      color: $white;
+      font-weight: 400;
+      position: relative;
+      &:hover {
+        color: $secondary;
       }
+    }
+  }
+  .link-dropdown-icon {
+    transform: rotate(0deg);
+    width: 13px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    transition: transform ease-in-out 0.2s;
+    &.opened {
+      transform: rotate(-180deg);
+    }
+  }
+  .dropdown-container {
+    padding-top: 15px;
+    position: absolute;
+  }
+  .nav-dropdown {
+    background-color: #{$black}#{cc};
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    min-width: 120px;
+    max-width: 200px;
+    height: 0;
+    opacity: 0;
+    transition: all ease-in-out 0.2s;
+    &.opened {
+      height: 100px;
+      opacity: 1;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: $white;
     }
   }
 }
 /*----------------------------Queries-------------------------------*/
 @media (min-width: 992px) {
-  header{
+  header {
     .navbar {
-      .nav-item{
+      .nav-item {
         margin: 0 8px;
       }
     }
@@ -45,12 +82,12 @@ header{
 }
 
 @media (max-width: 991.98px) {
-    header{
-    .navbar{
-      &-toggler{
+  header {
+    .navbar {
+      &-toggler {
         color: $white !important;
         border-color: $white !important;
-        &:focus{
+        &:focus {
           box-shadow: none;
         }
       }
@@ -62,11 +99,35 @@ header{
         left: 0;
         width: 100%;
       }
-      .nav-item{
+      .nav-item {
         border-bottom: 1px solid $lightergrey;
         width: 100%;
         padding: 0 30px;
-        .nav-link{
+        .nav-link {
+          color: $black;
+        }
+      }
+      .link-dropdown-icon {
+        float: right;
+        margin-top: 5;
+      }
+      .dropdown-container {
+        padding-top: 0;
+        position: relative;
+      }
+      .nav-dropdown {
+        background-color: $white;
+        min-width: 0;
+        max-width: 100%;
+        padding: 0;
+        height: 0;
+        transition: all ease-in-out 0.2s;
+        &.opened {
+          height: 100px;
+          padding: 0px 20px;
+        }
+        a {
+          text-decoration: none;
           color: $black;
         }
       }
@@ -75,11 +136,11 @@ header{
 }
 
 @media (max-width: 767.98px) {
-  header{
-    .navbar{
-      .nav-item{
+  header {
+    .navbar {
+      .nav-item {
         padding: 0;
-        .nav-link{
+        .nav-link {
           max-width: 540px;
           margin: 0 auto;
           padding-left: 12px;
@@ -87,7 +148,12 @@ header{
         }
       }
     }
+    .dropdown-container {
+      max-width: 540px;
+      margin: auto;
+    }
   }
 }
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+}
