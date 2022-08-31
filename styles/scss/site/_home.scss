@@ -1,5 +1,7 @@
 /*-------------------------------Banner----------------------------------*/
 .banner{
+  padding-bottom: 0;
+  padding-top: 73px;
   &_back{
     position: absolute;
     left: 10%;
@@ -33,5 +35,61 @@
       background: $white;
       opacity: 0.5;
     }
+  }
+}
+/*-------------------------------From-Banner----------------------------------*/
+.form-banner{
+  background-color:$lightgrey;
+  p{
+    font-weight: 400;
+  }
+  &_top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p.h3{
+      color: $blue;
+      margin-bottom: 0;
+    }
+    img{
+      margin-right: 8px;
+    }
+  }
+  &_md{
+    margin-top: 28px;
+    margin-bottom: 20px;
+    p.h5{
+      color: $darkestgrey;
+    }
+  }
+  .min-max{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 11px;
+  }
+  .form-select{
+    color: $darkestgrey;
+    border-radius: 8px;
+    border: $white;
+    box-shadow: none;
+      &::focus{
+        border: 1px solid $darkestgrey;
+        box-shadow: none;
+      }
+  }
+  .form-floating {
+    .form-control{
+      height: calc(2.3rem + 1px);
+    }
+    label{
+      margin-bottom: 0;
+      padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+      color: $darkestgrey;
+    }
+  }
+  .btn.btn-primary {
+    border-radius: 8px;
+    padding: 6px 32px;
   }
 }
