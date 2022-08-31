@@ -31,19 +31,22 @@
     <div class="swiper gallery-banner">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="assets/img/banner/bannerd.jpg" alt="" loading="lazy">
+          <img src="assets/img/banner/bannerd.jpg" alt="" loading="lazy" class="d-none d-md-block">
+          <img src="assets/img/banner/bannerm.jpg" alt="" loading="lazy" class="d-md-none">
             <div class="banner_back d-none d-md-block">
               <h1 class="fw-bold">Hacé realidad<br>el sueño de<br>tu auto propio</h1>
             </div>
         </div>
         <div class="swiper-slide" >
-          <img src="assets/img/banner/bannerd.jpg" alt="" loading="lazy">
+          <img src="assets/img/banner/bannerd.jpg" alt="" loading="lazy" class="d-none d-md-block">
+          <img src="assets/img/banner/bannerm.jpg" alt="" loading="lazy" class="d-md-none">
             <div class="banner_back d-none d-md-block">
               <h1 class="fw-bold">Hacé realidad<br>el sueño de<br>tu auto propio</h1>
             </div>
         </div>
         <div class="swiper-slide" >
-          <img src="assets/img/banner/bannerd.jpg" alt="" loading="lazy">
+          <img src="assets/img/banner/bannerd.jpg" alt="" loading="lazy" class="d-none d-md-block">
+          <img src="assets/img/banner/bannerm.jpg" alt="" loading="lazy" class="d-md-none">
             <div class="banner_back d-none d-md-block">
               <h1 class="fw-bold">Hacé realidad<br>el sueño de<br>tu auto propio</h1>
             </div>
@@ -54,7 +57,68 @@
       <div class="swiper-button-next swiper_button"></div>
       <div class="swiper-button-prev swiper_button"></div>
     </div>
-
+  </section>
+  <section id="form-banner" class="form-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 form-banner_top">
+          <img src="assets/icons/lupa-azul.svg" alt="">
+          <p class="h3">Buscá tu <span class="fw-bold">próximo vehículo</span></p>
+        </div>
+        <div class="col-12 form-banner_md">
+          <p class="h5">Seleccioná los filtros para empezar tu búsqueda:</p>
+        </div>
+      </div>
+     <div class="row">
+        <div class="col-lg-2 col-12 form-banner_bt">
+<!-- TODO: Ver si se pueden colocar check list -->
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Tipo de vehículo</option>
+            <option value="1">Autos</option>
+            <option value="2">Camionetas</option>
+            <option value="3">Compactos</option>
+            <option value="4">Deportivos</option>
+            <option value="5">Motos</option>
+            <option value="6">SUVS / Familiares</option>
+            <option value="7">Utilitarios</option>
+          </select>
+        </div>
+        <div class="col-lg-2 col-12 form-banner_bt">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Marca</option>
+            <option value="1">Audi</option>
+            <option value="2">BMW</option>
+            <option value="3">Brillance</option>
+            <option value="4">BYD</option>
+            <option value="5">Chana</option>
+          </select>
+        </div>
+        <div class="col-lg-2 col-12 form-banner_bt">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Estado</option>
+            <option value="1">Nuevo</option>
+            <option value="2">Usado</option>
+            <option value="3">Brillance</option>
+            <option value="4">BYD</option>
+            <option value="5">Chana</option>
+          </select>
+        </div>
+        <div class="col-lg-3 col-12 min-max form-banner_bt">
+          <div class="form-floating">
+            <input id="telefono" type="tel" class="form-control" placeholder="Teléfono" name="phone" required>
+            <label for="telefono" class="form-label">Min. (Gs.)</label>
+          </div>
+          <span>-</span>
+          <div class="form-floating">
+            <input id="telefono" type="tel" class="form-control" placeholder="Teléfono" name="phone" required>
+            <label for="telefono" class="form-label">Max. (Gs.)</label>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12 form-banner_bt">
+          <button class="btn btn-primary" type="button" onclick="sendForm('searchForm')">Buscar</button>
+        </div>
+      </div>
+    </div>
   </section>
   <footer></footer>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
