@@ -3,12 +3,12 @@
     &_swiper{
       .swiper{
         width: 90%;
-      }
-      .swiper-button-next{
-        right: 0;
-      }
-      .swiper-button-prev{
-        left: 0;
+        &-button-next{
+          right: 0;
+        }
+        &-button-prev{
+          left: 0;
+        }
       }
     }
   }
