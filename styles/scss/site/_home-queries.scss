@@ -12,6 +12,19 @@
       }
     }
   }
+  .brands{
+    &_swiper{
+      .swiper{
+        width: 90%;
+        &-button-next{
+          right: 0;
+        }
+        &-button-prev{
+          left: 0;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 991.98px) {
   .form-banner{
@@ -39,6 +52,22 @@
     }
   }
   .opcions{
+    padding: 50px 0;
+    .swiper {
+      padding-bottom: 30px;
+      .swiper-pagination{
+        bottom: 2px;
+        &-bullet{
+          opacity: 0.4;
+          background-color: $darkestgrey;
+          &-active{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .brands{
     padding: 50px 0;
     .swiper {
       padding-bottom: 30px;

@@ -59,21 +59,49 @@ const swiperopcions = new Swiper(".slider-opcions", {
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-nexta",
+    prevEl: ".swiper-button-preva",
   },
   breakpoints: {
-  "320": {
-    slidesPerView: 1,
-    spaceBetween: 10,
+    "320": {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    "768": {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    "992": {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
   },
-  "768": {
-    slidesPerView: 2,
-    spaceBetween: 20,
+});
+/*-------------------------------Brands----------------------------------*/
+const swiperbrands = new Swiper(".slider-brands", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
-  "992": {
-    slidesPerView: 3,
-    spaceBetween: 40,
+  navigation: {
+    nextEl: ".swiper-button-nextb",
+    prevEl: ".swiper-button-prevb",
   },
-},
+  breakpoints: {
+    "320": {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    "576": {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    "1024": {
+      slidesPerView: 6,
+      spaceBetween: 40,
+    },
+  },
 });

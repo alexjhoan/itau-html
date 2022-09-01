@@ -154,6 +154,7 @@
   }
   &_swiper{
     position: relative;
+
     .swiper-slide {
       border-radius: 20px;
     }
@@ -163,6 +164,44 @@
       transition: opacity .2s ease-in-out;
       &:hover{
         opacity: 1;
+      }
+      &::after{
+        font-size: 30px;
+      }
+    }
+    .swiper-button-next{
+      right: -30px;
+    }
+    .swiper-button-prev{
+      left: -30px;
+    }
+  }
+}
+
+.brands{
+  padding-top: 69px;
+  p.h3{
+    color: $darkestgrey;
+  }
+  &_swiper{
+    position: relative;
+    margin-top: 20px;
+    .swiper{
+      &-slide{
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    }
+    .swiper_button{
+      color: $darkestgrey;
+      opacity: 0.6;
+      transition: opacity .2s ease-in-out;
+      &:hover{
+        opacity: 1;
+      }
+      &::after{
+        font-size: 30px;
       }
     }
     .swiper-button-next{
