@@ -57,3 +57,13 @@ section {
   border-color: $btn-hover !important;
   box-shadow: none !important;
 }
+
+// --------------------arrows-swiper--------------------
+
+.swiper-button-next, .swiper-button-prev {
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}

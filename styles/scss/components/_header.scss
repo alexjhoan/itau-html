@@ -28,7 +28,7 @@ header {
       color: $white;
       font-weight: 400;
       position: relative;
-      &:hover {
+      &:hover, &.active {
         color: $secondary;
       }
     }
