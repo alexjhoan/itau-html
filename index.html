@@ -83,70 +83,138 @@
             <p class="h5">Seleccioná los filtros para empezar tu búsqueda:</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-2 col-12 form-banner_bt">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Tipo de vehículo</option>
-              <option value="1">Autos</option>
-              <option value="2">Camionetas</option>
-              <option value="3">Compactos</option>
-              <option value="4">Deportivos</option>
-              <option value="5">Motos</option>
-              <option value="6">SUVS / Familiares</option>
-              <option value="7">Utilitarios</option>
-            </select>
-          </div>
-          <div class="col-lg-2 col-12 form-banner_bt">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Marca</option>
-              <option value="1">Audi</option>
-              <option value="2">BMW</option>
-              <option value="3">Brillance</option>
-              <option value="4">BYD</option>
-              <option value="5">Chana</option>
-            </select>
-          </div>
-          <div class="col-lg-2 col-12 form-banner_bt">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Estado</option>
-              <option value="1">Nuevo</option>
-              <option value="2">Usado</option>
-              <option value="3">Brillance</option>
-              <option value="4">BYD</option>
-              <option value="5">Chana</option>
-            </select>
-          </div>
-          <div class="col-lg-3 col-sm-7 col-12 min-max form-banner_bt">
-            <div class="form-floating">
-              <input
-                id="telefono"
-                type="tel"
-                class="form-control"
-                placeholder="Teléfono"
-                name="phone"
-                required
-              />
-              <label for="telefono" class="form-label">Min. (Gs.)</label>
+        <form onsubmit="formSearch(event)">
+          <div class="row form-banner_collapse">
+            <div class="col-12 col-lg-4 col-xl-2 position-relative">
+              <button
+                class="form-banner_collapse_btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#type"
+                aria-expanded="false"
+                aria-controls="type"
+              >
+                Tipo de vehículo
+                <img src="./assets/icons/angle-down-black.svg" alt="" />
+              </button>
+              <div class="collapse form-banner_collapse_content" id="type">
+                <div class="card card-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="autos" />
+                    <label class="form-check-label" for="autos">Autos</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="camionetas" />
+                    <label class="form-check-label" for="camionetas">Camionetas</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="compactos" />
+                    <label class="form-check-label" for="compactos">Compactos</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="deportivos" />
+                    <label class="form-check-label" for="deportivos">Deportivos</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="motos" />
+                    <label class="form-check-label" for="motos">Motos</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="suvs" />
+                    <label class="form-check-label" for="suvs">SUVS / Familiares</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="utilitarios" />
+                    <label class="form-check-label" for="utilitarios">Utilitarios</label>
+                  </div>
+                </div>
+              </div>
             </div>
-            <span>-</span>
-            <div class="form-floating">
-              <input
-                id="telefono"
-                type="tel"
-                class="form-control"
-                placeholder="Teléfono"
-                name="phone"
-                required
-              />
-              <label for="telefono" class="form-label">Max. (Gs.)</label>
+            <div class="col-12 col-lg-4 col-xl-2 position-relative">
+              <button
+                class="form-banner_collapse_btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#marca"
+                aria-expanded="false"
+                aria-controls="marca"
+              >
+                Marca
+                <img src="./assets/icons/angle-down-black.svg" alt="" />
+              </button>
+              <div class="collapse form-banner_collapse_content" id="marca">
+                <div class="card card-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="marca" value="" id="audi" />
+                    <label class="form-check-label" for="audi">Audi</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="marca" value="" id="bmw" />
+                    <label class="form-check-label" for="bmw">BMW</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="marca"
+                      value=""
+                      id="brillance"
+                    />
+                    <label class="form-check-label" for="brillance">Brillance</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="marca" value="" id="BYD" />
+                    <label class="form-check-label" for="BYD">BYD</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="marca" value="" id="chana" />
+                    <label class="form-check-label" for="chana">Chana</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-xl-2 position-relative">
+              <button
+                class="form-banner_collapse_btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#estado"
+                aria-expanded="false"
+                aria-controls="estado"
+              >
+                Estado
+                <img src="./assets/icons/angle-down-black.svg" alt="" />
+              </button>
+              <div class="collapse form-banner_collapse_content" id="estado">
+                <div class="card card-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="nuevo" />
+                    <label class="form-check-label" for="nuevo">Nuevo</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="usado" />
+                    <label class="form-check-label" for="usado">Usado</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 col-xl-2 pe-1 pe-md-2">
+              <div class="form-floating form-banner_floating">
+                <input type="number" class="form-control" id="min" placeholder="min" />
+                <label for="min">Min. (Gs.)</label>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 col-xl-2 ps-1 ps-md-2">
+              <div class="form-floating form-banner_floating">
+                <input type="number" class="form-control" id="max" placeholder="max" />
+                <label for="max">Max. (Gs.)</label>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-xl-2 form-banner_btn">
+              <button class="btn btn-primary" type="submit">Buscar</button>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-5 col-12 form-banner_bt">
-            <button class="btn btn-primary" type="button" onclick="sendForm('searchForm')">
-              Buscar
-            </button>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
     <section id="service" class="service">

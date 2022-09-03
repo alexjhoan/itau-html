@@ -44,9 +44,10 @@ section {
 .btn.btn-primary {
   background-color: $primary;
   border-color: $primary;
-  border-radius: 0;
-  padding: 10px 100px;
+  border-radius: 8px;
+  padding: 10px 25px;
   color: $white;
+  width: 100%;
   font-weight: 700;
 }
 
@@ -58,9 +59,16 @@ section {
   box-shadow: none !important;
 }
 
+.form-control:focus {
+  border-color: $primary;
+  outline: 0;
+  box-shadow: 0 0 0 4px #{$primary}#{40};
+}
+
 // --------------------arrows-swiper--------------------
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
   &:hover {

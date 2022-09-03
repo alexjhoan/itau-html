@@ -15,7 +15,7 @@
       }
       &::before {
         position: absolute;
-        content: "";
+        content: '';
         background-color: #f47920;
         width: 325px;
         height: 216px;
@@ -37,9 +37,9 @@
         background: $white;
         opacity: 0.5;
       }
-      &-slide{
-        picture{
-          img{
+      &-slide {
+        picture {
+          img {
             max-height: calc(100vh - 76px);
             object-fit: cover;
             object-position: center;
@@ -74,35 +74,78 @@
         color: $darkestgrey;
       }
     }
-    .min-max {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      column-gap: 11px;
-    }
-    .form-select {
-      color: $darkestgrey;
-      border-radius: 8px;
-      border: $white;
-      box-shadow: none;
-      &:focus {
-        border: 1px solid $darkestgrey;
-        box-shadow: none;
+    &_collapse {
+      row-gap: 15px;
+      &_btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        border: none;
+        border-radius: 8px;
+        padding: 0 12px;
+        background-color: $white;
+        img {
+          width: 10px;
+          transform: rotate(-180deg);
+          transition: transform ease-in-out 0.2s;
+        }
+        &.collapsed {
+          img {
+            transform: rotate(0deg);
+          }
+        }
+      }
+      &_content {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        width: calc(100% - 20px);
+        box-shadow: 0px 7px 10px 0px #{$black}#{40};
+        border-radius: 4px;
+        z-index: 10;
       }
     }
-    .form-floating {
-      .form-control {
-        height: calc(2.3rem + 1px);
+    .form-check {
+      &-input {
+        cursor: pointer;
+        &:focus {
+          box-shadow: 0 0 0 4px #{$primary}#{40};
+        }
+        &:checked {
+          background-color: $white;
+          border-color: $darkgrey;
+          &[type='checkbox'] {
+            background-image: url(../../assets/icons/check-orange.svg);
+          }
+          & ~ label {
+            color: $primary;
+          }
+        }
+        &[type='radio']:checked {
+          background-color: $primary;
+          border-color: $darkgrey;
+          & ~ label {
+            color: $primary;
+          }
+        }
+      }
+      &-label {
+        cursor: pointer;
+      }
+    }
+    &_floating {
+      input {
+        height: 50px;
       }
       label {
-        margin-bottom: 0;
-        padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-        color: $darkestgrey;
+        padding: 10px 12px;
+        transform: translateY(2px);
       }
     }
-    .btn.btn-primary {
+    &_btn {
       border-radius: 8px;
-      padding: 6px 32px;
     }
   }
   /*--------------------------------Services-----------------------------------*/
