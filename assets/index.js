@@ -114,17 +114,10 @@ const swiperbrands = new Swiper('.slider-brands', {
 
 const formSearch = (event) => {
   event.preventDefault()
-  console.log(event.target)
   const dataForm = new FormData(event.target)
-  console.log(dataForm)
-  const objetoCompleto = {}
+  const formObjet = {}
   for (const [name, value] of dataForm) {
-    objetoCompleto[name] = value
+    formObjet[name] = value
   }
-  console.log(objetoCompleto)
+  console.log(formObjet)
 }
-
-// $('form').submit(function (event) {
-//   event.preventDefault()
-//   console.log(event.target)
-// })
