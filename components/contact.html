@@ -1,57 +1,96 @@
-<div class="container">
-        <div class="row contact_row">
-          <div class="col-lg-6 col-12 contact_left">
-            <div class="contact_left_text">
-              <img src="assets/icons/telefono-azul.svg" class="d-lg-none" alt="">
-              <img src="assets/icons/telefono.svg" class="d-none d-lg-block" alt="">
-              <p class="h3 mb-0 fw-bold">Quiero que me llamen</p>
-            </div>
-            <form id="contactForm" class="needs-validation" action="javascript:void(0);" novalidate>
-              <p>Dejanos tus datos de contacto y te llamaremos para contarte más sobre Préstamo Mi Auto.</p>
-              <div class="contact_form">
-                <div class="contacto_form_item">
-                  <div class="form-floating">
-                    <input id="name" type="text" class="form-control" placeholder="Nombre" name="firstname" required>
-                    <label for="name" class="form-label">Nombre:*</label>
-                  </div>
-                  <div class="form-floating">
-                    <input id="email" type="email" class="form-control" placeholder="Email" name="email" required>
-                    <label for="email" class="form-label">Email:*</label>
-                  </div>
-                  <div class="form-floating">
-                    <input id="telefono" type="tel" class="form-control" placeholder="Teléfono" name="phone" required>
-                    <label for="cedula" class="form-label">Cédula (sin puntos ni guiones):*</label>
-                  </div>
-                  <div class="form-floating">
-                    <input id="telefono" type="tel" class="form-control" placeholder="Teléfono" name="phone" required>
-                    <label for="telefono" class="form-label">Tel:*</label>
-                  </div>
-                </div>
+<div class="contact">
+  <div class="container">
+    <div class="row contact_row">
+      <div class="col-lg-6 col-12 contact_left">
+        <div class="contact_left_text">
+          <img src="/assets/icons/telefono-azul.svg" class="d-lg-none" alt="" />
+          <img src="/assets/icons/telefono.svg" class="d-none d-lg-block" alt="" />
+          <p class="h3 mb-0 fw-bold">Quiero que me llamen</p>
+        </div>
+        <form id="contactForm" class="needs-validation" action="javascript:void(0);" novalidate>
+          <p>
+            Dejanos tus datos de contacto y te llamaremos para contarte más sobre Préstamo Mi Auto.
+          </p>
+          <div class="contact_form">
+            <div class="contacto_form_item">
+              <div class="form-floating">
+                <input
+                  id="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Nombre"
+                  name="firstname"
+                  required
+                />
+                <label for="name" class="form-label">Nombre:*</label>
               </div>
-                <button class="btn btn-primary" type="button" onclick="sendForm('contactForm')">Enviar</button>
-            </form>
-            <div id="formSending" style="display: none;">
-              <p class="h3 strong">
-                Enviando
-                <span></span>
-                <span></span>
-                <span></span>
-              </p>
-            </div>
-            <div id="formSuccess" style="display: none;">
-              <p class="h3 strong">¡Consulta Enviada!</p>
-            </div>
-            <div id="formError" style="display: none;">
-              <p class="h3 strong">¡Error en el envio de su consulta.<br />Por favor intentar mas tarde!</p>
+              <div class="form-floating">
+                <input
+                  id="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+                <label for="email" class="form-label">Email:*</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  id="telefono"
+                  type="tel"
+                  class="form-control"
+                  placeholder="Teléfono"
+                  name="phone"
+                  required
+                />
+                <label for="cedula" class="form-label">Cédula (sin puntos ni guiones):*</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  id="telefono"
+                  type="tel"
+                  class="form-control"
+                  placeholder="Teléfono"
+                  name="phone"
+                  required
+                />
+                <label for="telefono" class="form-label">Tel:*</label>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6 col-12 contact_right">
-            <div class="contact_right_back">
-              <div class="texto">
-              <p class="h1 fw-bold">Hacé realidad<br class="d-none d-lg-block">el sueño <br class="d-lg-none">de<br class="d-none d-lg-block">tu auto propio</p>
-
-              </div>
-            </div>
+          <button class="btn btn-primary" type="button" onclick="sendForm('contactForm')">
+            Enviar
+          </button>
+        </form>
+        <div id="formSending" style="display: none">
+          <p class="h3 strong">
+            Enviando
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+        </div>
+        <div id="formSuccess" style="display: none">
+          <p class="h3 strong">¡Consulta Enviada!</p>
+        </div>
+        <div id="formError" style="display: none">
+          <p class="h3 strong">
+            ¡Error en el envio de su consulta.<br />Por favor intentar mas tarde!
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 contact_right">
+        <div class="contact_right_back">
+          <div class="texto">
+            <p class="h1 fw-bold">
+              Hacé realidad<br class="d-none d-lg-block" />el sueño <br class="d-lg-none" />de<br
+                class="d-none d-lg-block"
+              />tu auto propio
+            </p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
